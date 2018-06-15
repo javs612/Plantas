@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inicio</title>
+    <link rel="stylesheet" href="style/game.css">
+
+</head>
+<body>
+
+<audio src="sounds/Soundtrack_Main Menu.mp3" autoplay loop></audio>
+
+<audio>
+    <source src="sounds/click.mp3">
+    <source src="sounds/click.ogg">
+</audio>
+
+<div class="wrap home" id="home">
+    <a href="#" id="start" onmouseover="playclip();" ></a>
+</div>
+
+<div class="wrap interface" id="interface">
+    
+  
+    <a href="#" id="game"  onmouseover="playclip();"></a>
+    <a href="#" id="survival"  onmouseover="playclip();"></a>
+    <a href="#" id="challenges"  onmouseover="playclip();"></a>
+   <!-- almanac -->
+    <a href="#" id="almanac"  onmouseover="playclip();" ></a>
+
+    <div class="btn" id="option"  onmouseover="playclip();"></div>
+    <div class="btn" id="help"  onmouseover="playclip();" ></div>
+    <div class="btn" id="quit"  onmouseover="playclip();"></div>
+    
+</div>
+
+<div class="wrap inter-bg" id="menu-page">
+    <div id="level">
+        <img src="img/interface/OptionsMenuback8.png" id="menu">
+        <h3>Inicio</h3>
+        <ul>
+            <li><a href="game.html">Nivel - 1</a></li>
+            <li><a href="game2.html">Nivel - 2</a></li>
+            <li><a href="game3.html">Nivel - 3</a></li>
+            
+        </ul>
+        <div id="back"><p>Salir</p></div>
+    </div>
+</div>
+
+<div class="wrap inter-bg" id="almanac-page">
+    <div class="almanac-menu">
+        <h3>album</h3>
+        <img src="img/interface/SunFlower.gif" alt="SunFlower" id="SunFlower">
+        <img src="img/1.gif" alt="Zombie">
+        <a href="#" id="almanac-plant">plantas</a>
+        <a href="#" id="almanac-zombie">zombies</a>
+        <a href="#" id="almanac-close">salir</a>
+    </div>
+</div>
+
+<div class="wrap inter-bg" id="almanac-plant-page">
+    <div class="almanac-all-menu almanac-plant-menu">
+        <h3>plantas</h3>
+        <img src="img/Peashooter.png" id="almanac-peashooter-img">
+        <p>100</p>
+        <div>
+            <div id="almanac-peashooter-des">
+                <div>
+                    <img src="img/Peashooter.gif" alt="Peashooter">
+                </div>
+               
+            </div>
+        </div>
+        <a href="#" id="almanac-plant-close">salir</a>
+    </div>
+</div>
+
+<div class="wrap inter-bg" id="almanac-zombie-page">
+    <div class="almanac-all-menu almanac-zombie-menu">
+        <h3>zombies</h3>
+        <img src="img/interface/Zombie.png" id="almanac-zombie-img">
+        <p>50</p>
+        <div>
+            <div id="almanac-zombie-des">
+                <div>
+                    <img src="img/1.gif" alt="Zombie">
+                </div>
+               
+            </div>
+        </div>
+        <a href="#" id="almanac-zombie-close">salir</a>
+    </div>
+</div>
+
+<div class="wrap inter-bg" id="help-page">
+    <div></div>
+</div>
+
+<div class="wrap inter-bg" id="void-page">
+    <div><p>No disponible</p></div>
+</div>
+
+
+<script src="libraries/p5.js"></script>
+<script src="libraries/p5.dom.js"></script>
+<script src="libraries/p5.sound.js"></script>
+<script src="script/game.js"></script>
+<script type="text/javascript" src="script/sonido.js"></script>
+</body>
+</html>

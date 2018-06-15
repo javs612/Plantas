@@ -1,0 +1,156 @@
+*{  margin-left: 70px; padding: 0; font-family: "宋体"; font-size: 12px; -webkit-user-select: none; -moz-user-select: none;}
+body{ background:#1CDF31;}
+.wrap{ position: absolute; top:0; background: #000; width: 900px; height: 600px; overflow: hidden; border: 3px outset;}
+a{ text-decoration: none;}
+
+
+.bg{ position: absolute; width: 1400px; height: 600px; visibility: hidden; z-index: 0;}
+#story{ position: absolute; z-index: 999; top: 12%; left: 16%; font-size: 50px; width: 700px; text-indent: 2em; color: #ffffcc; font-style: italic; font-weight: bold; font-family: fantasy;
+    -webkit-animation: fade 1s ease 1;
+    -o-animation: fade 1s ease 1;
+    animation: fade 1s ease 1;}
+#story span{ margin-left: 49px; font-size: 23px; font-style: normal; color: coral;}
+.zombies{ position: absolute; width: 335px; height: 600px; left: 1065px; top:0; z-index: 1;}
+.shadow{ position: absolute; left: 72px; top: 122px;}
+.zombie{ position: absolute; left: 10px; top: 0;}
+#sod{ position: absolute; width: 70px; height: 117px; left: 132px; top: 280px; z-index: 1; background: url("../img/sod/sod1row.png") 0 0 no-repeat;}
+.sodRoll{ position: absolute; width: 68px; height: 141px; left: 132px; top: 250px; z-index: 1;}
+.sodCap{ position: absolute; width: 73px; height: 71px; left: 132px; top: 345px; z-index:1;}
+@keyframes fade {
+    0%{ opacity: 0; filter:alpha(opacity=0);}
+    20%{ opacity: 0; filter:alpha(opacity=0);}
+    50%{ opacity: 0.7; filter:alpha(opacity=70);}
+    100%{ opacity: 1; filter:alpha(opacity=100);}
+}
+
+#board{ position: absolute; left: 105px; top: 0; height: 35px; width: 123px; visibility: hidden; z-index: 1;}
+#sunBoard{ background: url('../img/SunBack.png') no-repeat; position: absolute; width: 123px; height: 35px;}
+#sunScore{ position: absolute; left: 43px; top: 4px; width: 68px; font-family: Verdana; font-size: 22px; font-weight: bold; text-align: center;}
+.sun{ position: absolute;;cursor: pointer; width: 78px; height: 78px; z-index: 25; opacity: 0.8; alpha(opacity=80);}
+
+#cardList{ position: absolute; left: 3px; width: 100px; visibility: hidden; overflow: visible; z-index: 25;}
+#card{ position: absolute; cursor: pointer; padding: 0; height: 60px;}
+#card img{ position: absolute;}
+#card span{ position: absolute; left: 66px; top: 40px; width: 34px; height: 20px; font-size: 15px;}
+.peashooter{ position: absolute; left: 0; top: 0; z-index: 99;}
+.peashooter_opa{ position: absolute; left: 0; top: 0; opacity: 0.8; alpha(opacity=80); display: none; z-index: 98;}
+#pointUp{ position: absolute; left: 40px; top: 75px; z-index: 999; visibility: hidden;}
+
+#plants,#dzombies{ position: absolute; left: 0; top: 0; z-index: 2;}
+#plants div{ position: absolute; top: 294px; z-index: 99;}
+#plants img{ position: absolute;}
+#dzombies div{ position: absolute; top: 226px; z-index: 33;}
+.bullet{ position: absolute; z-index: 98;}
+.head{ position: absolute; z-index: 89;}
+
+#prepare{ position: absolute; z-index: 999; top: 28%; left: 42%; visibility: hidden;}
+
+.endText{ position: absolute; left: 25%; top: 12%; z-index: 999;}
+
+.sunflower{ position: absolute; left: 600px; top: 400px; width: 80px; height: 100px; cursor: pointer; z-index: 999;}
+
+
+.home{ background: url("../img/index/menu_inicio.png") no-repeat; background-size: 100% 100%; visibility: visible;}
+#start{ position: absolute; left: 210px; top: 523px; background: url("../img/index/start_leave.png") repeat; background-size: 100% 100%; width: 344px; height: 75px;}
+#start:hover{ position: absolute; left: 210px; top: 523px; background: url("../img/index/start_over.png") repeat; background-size: 100% 100%; width: 344px; height: 75px;}
+.made{ position: absolute; left: 110px; top: 143px; font-style: italic; color: red; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;}
+.made:hover{
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.9);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+}
+footer{ text-align: center; margin-top: 580px}
+
+.interface{ background: url("../img/interface/Surface.png"); visibility: hidden;}
+#game{ background: url("../img/interface/SelectorScreenStartAdventur.png"); width: 330px; height: 144px; position: absolute; left: 400px; top: 70px;}
+#game:hover{ background: url("../img/interface/SelectorScreenStartAdventur.png") -330px -144px;}
+#survival{ background: url("../img/interface/SelectorScreenSurvival.png"); width: 314px; height: 132px; position: absolute; left: 400px; top: 210px;}
+#survival:hover{ background: url("../img/interface/SelectorScreenSurvival.png") -314px -132px;}
+
+#challenges:hover{ background: url("") -286px -121px;}
+#almanac{ background: url("../img/interface/SelectorScreen_Almanac.png"); width: 99px; height: 99px; position: absolute; left: 390px; top: 430px;}
+#almanac:hover{ background: url("../img/interface/SelectorScreen_Almanac.png") -99px -99px;}
+.btn{ border-radius: 10px; width: 57px; height: 26px; position: absolute;}
+.btn:hover{ background: #fff; opacity: 0.5}
+#option{ left: 570px; top: 490px; width: 86px; height: 30px;}
+#help{ left: 657px; top: 526px;}
+#quit{ left: 737px; top: 516px;}
+
+.inter-bg{ background: url("../img/interface/Surface.png"); background-size: 100%; visibility: hidden;}
+#level{ position: absolute; left: 165px; top: 20px;}
+#menu{ width: 400px; height: 490px;}
+#level h3{ position: absolute; left: 160px; top: 150px; font-size: 30px; font-family: serif; color: #c78c5a;}
+#level ul{ position: absolute; left: 100px; top: 198px; width: 200px;}
+#level li{ list-style: none; display: inline-block; margin: 10px 0px;}
+#level li a{ font-size: 16px; font-family: serif; color: #ffffcc;}
+#level a:hover{ font-weight: bold;}
+#back{ background: url("../img/interface/OptionsBackButton8.png"); width: 345px; height: 85px; position: absolute; left: 22px; top: 390px; cursor: pointer; color: #c68c5e;}
+#back:hover{ color: #dfa45f;}
+#back p{ position: absolute; left: 75px; top: 0px; font-size: 30px;  font-weight: bold;}
+
+.almanac-menu{ width: 800px; height: 600px; background: url("../img/interface/Almanac_IndexBack.jpg");}
+.almanac-menu h3{ font-size: 38px; text-align: center; padding-top: 20px;}
+.almanac-menu img{ margin: 110px 80px 10px 170px;}
+.almanac-menu a{ width: 113px; position: absolute; top: 340px; font-size: 20px; text-align: center;}
+
+
+#almanac-close{ width: 87px; height: 24px; line-height: 24px; color: #000; font-size: 14px; background: url("../img/interface/Almanac_CloseButton.png"); top: 569px; left: 670px;}
+#almanac-close:hover{ background: url("../img/interface/Almanac_CloseButton.png") -89px -26px;}
+
+.almanac-all-menu{ width: 800px; height: 600px;}
+.almanac-plant-menu{ background: url("../img/interface/Almanac_PlantBack.jpg");}
+.almanac-all-menu h3{ font-size: 24px; text-align: center; padding-top: 23px; color: #cda93e;}
+.almanac-all-menu>img{ width: 80px; position: absolute; left: 16px; top: 100px; cursor: pointer;}
+.almanac-all-menu>p{  position: absolute; left: 62px; top: 131px; font-size: 14px;}
+.almanac-all-menu>div{ width: 316px; height: 473px; position: absolute; left: 459px; top: 87px;}
+.almanac-plant-menu>div{ background: url("../img/interface/Almanac_PlantCard.png");}
+.almanac-all-menu>div>div{ visibility: hidden;}
+.almanac-all-menu>div>div>div{ width: 190px; height: 144px; background: url("../img/interface/sod3row.png") -40px; margin-top: 22px; margin-left: 62px;}
+.almanac-all-menu>div>div>div>img{ margin-left: 65px; margin-top: 37px}
+.almanac-all-menu>div>div>h4{ text-align: center; font-size: 24px; color: #cda93e; margin-top: 15px;}
+.almanac-all-menu>div>div>p{ margin: 12px 25px; font-size: 14px;}
+.almanac-all-menu>div>div>p>span{ color: #ff0000; font-size: 14px; font-weight: bold;}
+.almanac-all-menu>a{ width: 162px; height: 24px; line-height: 24px; color: #000; font-size: 14px; background: url("../img/interface/Almanac_IndexButton.png"); position: absolute; top: 568px; left: 600px; text-align: center;}
+.almanac-all-menu>a:hover{ background: url("../img/interface/Almanac_IndexButton.png") 0 -26px;}
+
+.almanac-zombie-menu{ background: url("../img/interface/Almanac_ZombieBack.jpg");}
+.almanac-zombie-menu>div{ background: url("../img/interface/Almanac_ZombieCard.png");}
+#almanac-zombie-page h3{ color: #40c723; padding-top: 29px;}
+.almanac-zombie-menu>div>div{ margin-top: 49px;}
+#almanac-zombie-des>div{ width: 197px; height: 190px;}
+.almanac-zombie-menu>div>div>h4{ font-size: 24px; color: #40c723; margin-top: 18px;}
+#almanac-zombie-des img{ margin-left: 0; margin-top: 16px;}
+
+#help-page{ cursor: pointer}
+#help-page div{ width: 600px; height: 399px; background: url("../img/interface/Help.png"); position: absolute; left: 130px; top: 100px;}
+
+#void-page{ cursor: pointer;}
+#void-page div{ width: 405px; height: 488px; background: url("../img/interface/OptionsMenuback8.png"); position: absolute;left: 220px; top: 20px; text-align: center;}
+#void-page div p{ font-size: 40px; font-weight: bold; margin-right: 50px; margin-top: 200px; color: #40C723;}
+
+.flower{ background: url("../img/flower_card.png") no-repeat; background-size: 100% 100%;}
+.flower a{ position: absolute; left: 354px; top: 501px;}
+.flower button{ width: 196px; height: 42px; line-height: 39px; cursor: pointer; color: #c78c5a; font-size: 30px; background: #8b4325;}
+.flower button:hover{ background: #622b14;}
+.flower button:valid{ border: 2px solid #5d2a11;}
+
+
+.juego{
+    
+    position: absolute;
+    width: 900px; 
+    height: 600px; 
+    overflow: hidden; 
+    border: 3px outset;
+}
+
+
+
